@@ -13,7 +13,7 @@ module Clearance
     end
 
     def sign_up_path
-      Rails.application.routes.url_helpers.sign_up_path
+      Rails.application.routes.url_helpers.try(:sign_up_path)
     end
   end
 end
